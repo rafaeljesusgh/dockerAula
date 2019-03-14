@@ -1,7 +1,7 @@
-version: '1'
+version: '2'
 services:
 
   api:
-    build: node_v1/.
+    build: NodeApi/.
     ports:
       - "4000:5000"
