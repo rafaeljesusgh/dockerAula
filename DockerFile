@@ -2,7 +2,7 @@ FROM node:2
 
 MAINTAINER Jesus <330835@fiap.com.br>
 
-ADD api.js requirements.txt /
+ADD server.js requirements.txt /
 RUN pip install -r ./requirements.txt
 
 ENV PORT=5000
@@ -10,4 +10,4 @@ ENV PORT=5000
 EXPOSE $PORT
 HEALTHCHECK CMD curl --fail http://localhost:$PORT || exit 1
 
-CMD [ "./node.js" ]
+CMD [ "./server.js" ]
