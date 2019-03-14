@@ -1,0 +1,7 @@
+version: '1'
+services:
+
+  api:
+    build: node_v1/.
+    ports:
+      - "4000:5000"
